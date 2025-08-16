@@ -1013,3 +1013,59 @@ h3 {
 .image-placeholder {
     display: none;
 }
+
+/* Profile Picture Styling - FIXED VERSION */
+.profile-picture {
+    width: 300px !important;
+    height: 300px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Hero Image Container Fix */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 250px !important;
+        height: 250px !important;
+        max-width: 250px !important;
+        max-height: 250px !important;
+    }
+    
+    .hero-image {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 200px !important;
+        height: 200px !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
+    }
+    
+    .hero-image {
+        max-width: 200px;
+    }
+}
