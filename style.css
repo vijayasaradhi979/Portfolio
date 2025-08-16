@@ -991,3 +991,25 @@ h3 {
 .animate-on-scroll {
   animation: fadeInUp 0.6s ease forwards;
 }
+
+
+/* Profile Picture Styling */
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Remove the old placeholder styles */
+.image-placeholder {
+    display: none;
+}
